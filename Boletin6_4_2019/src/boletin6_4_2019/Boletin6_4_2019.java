@@ -16,15 +16,15 @@ public class Boletin6_4_2019 {
      */
     public static void main(String[] args) {
 
-        Pesonas per1 = new Pesonas();
-        Pesonas per2 = new Pesonas();
+        Pesonas calculo1 = new Pesonas();
+       
 
       /*  per1.setNombre();
         per1.setPeso();
         per2.setNombre();
         per2.setPeso();*/
         
-        per1.calculo();
+        calculo1.calculo();
 
       /* if (per1.getPeso() < per2.getPeso()) {
 
