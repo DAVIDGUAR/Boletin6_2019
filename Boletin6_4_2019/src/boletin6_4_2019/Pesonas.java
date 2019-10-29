@@ -12,9 +12,10 @@ import javax.swing.JOptionPane;
  * @author david
  */
 public class Pesonas {
-    
-    private int peso;
-    private String nombre;
+
+    private int peso,pesoa,pesob;
+    private String nombre,nombrea,nombreb;
+  
 
     public Pesonas(int peso, String nombre) {
         this.peso = peso;
@@ -23,10 +24,6 @@ public class Pesonas {
 
     public Pesonas() {
     }
-    
-    
-    
-    
 
     public int getPeso() {
         return peso;
@@ -43,21 +40,34 @@ public class Pesonas {
     public void setNombre() {
         this.nombre = JOptionPane.showInputDialog("Introduce nombre");
     }
+    
+    public void calculo(){
+        this.nombrea = JOptionPane.showInputDialog("Introduce nombre");
+        this.pesoa = Integer.parseInt(JOptionPane.showInputDialog("Introduce  peso"));
+       this.nombreb = JOptionPane.showInputDialog("Introduce nombre"); 
+        this.pesob = Integer.parseInt(JOptionPane.showInputDialog("Introduce  peso"));
+        
+        
+        if (pesoa< pesob) {
+
+            System.out.println("La persona que pesa mas es: " + nombreb + " com un peso de: "+ pesob + " y la diferencia de pesos es: " + (pesob - pesoa)+ "kg");
+           
+        }
+        else if (pesoa > pesob) {
+
+            System.out.println("La persona que pesa mas es: " + nombrea +" com un peso de: " + pesoa + " y la diferencia de pesos es: " + (pesoa - pesob)+" kg");
+
+        } else {
+
+            System.out.println("Tienen el mismo peso " + nombrea + " y " + nombreb + " com un peso de:" + pesoa +" kg" );
+
+    }
+    
+    }
 
     @Override
     public String toString() {
-        return  " nombre= " + nombre +" y peso= " + peso ;
+        return " nombre= " + nombre + " y peso= " + peso;
     }
-    
 
-    
 }
-    
-    
-    
-    
-    
-    
-    
-    
-
