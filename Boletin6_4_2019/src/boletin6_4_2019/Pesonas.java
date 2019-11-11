@@ -17,7 +17,7 @@ public class Pesonas {
     private String nombre,nombrea,nombreb;
   
 
-    public Pesonas(int peso, String nombre) {
+    public Pesonas( String nombre,int peso) {
         this.peso = peso;
         this.nombre = nombre;
     }
@@ -41,7 +41,7 @@ public class Pesonas {
         this.nombre = JOptionPane.showInputDialog("Introduce nombre");
     }
     
-    public void calculo(){
+  /*  public void calculo(){
         this.nombrea = JOptionPane.showInputDialog("Introduce nombre");
         this.pesoa = Integer.parseInt(JOptionPane.showInputDialog("Introduce  peso"));
        this.nombreb = JOptionPane.showInputDialog("Introduce nombre"); 
@@ -63,7 +63,23 @@ public class Pesonas {
 
     }
     
+    }*/
+    
+    
+    public void comparar(Pesonas dato1, Pesonas dato2){
+        
+        if (dato1.peso>dato2.peso){
+            
+            System.out.println(dato1.getNombre()+" e o mais pesado " + dato1.getPeso());
+        }else{
+            
+            System.out.println(dato2.getNombre()+" e o mais pesado " + dato2.getPeso());
+            
+        }
+        
+        
     }
+    
 
     @Override
     public String toString() {

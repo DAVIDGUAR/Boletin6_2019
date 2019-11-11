@@ -16,17 +16,24 @@ public class Boletin6_4_2019 {
      */
     public static void main(String[] args) {
 
-        Pesonas calculo1 = new Pesonas();
-       
-
-      /*  per1.setNombre();
+       // Pesonas calculo1 = new Pesonas();
+       Pesonas per1 = new Pesonas();
+ Pesonas per2 = new Pesonas();
+        per1.setNombre();
         per1.setPeso();
         per2.setNombre();
-        per2.setPeso();*/
+        per2.setPeso();
+        Pesonas per3 = new Pesonas("david",80);
+        Pesonas per4 = new Pesonas("Maria",50);
+        Pesonas obx1 = new Pesonas();
+        obx1.comparar(per4, per3);
+        obx1.comparar(per1, per2);
         
-        calculo1.calculo();
+        //calculo1.calculo();
+        
+       /* System.out.println(per1.getNombre());
 
-      /* if (per1.getPeso() < per2.getPeso()) {
+      if (per1.getPeso() < per2.getPeso()) {
 
             System.out.println("La persona que pesa mas es: " + per2.toString() + " y la diferencia de pesos es: " + (per2.getPeso() - per1.getPeso()));
 
